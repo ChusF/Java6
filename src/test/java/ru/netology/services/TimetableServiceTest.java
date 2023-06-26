@@ -6,7 +6,7 @@ import ru.netology.services.TimetableService;
 
 public class TimetableServiceTest {
     @Test
-    public void relax1 () {
+    public void relax1() {
         TimetableService service = new TimetableService();
 
         int income = 10_000;
@@ -15,6 +15,7 @@ public class TimetableServiceTest {
 
         Assertions.assertEquals(income, expenses, threshold);
     }
+
     @Test
     public void relax2() {
         TimetableService service = new TimetableService();
