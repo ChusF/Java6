@@ -7,10 +7,10 @@ public class TimetableService {
         int relax = 0; // месяцы отдыха
         for (int month = 1; month <= 12; month++) {
             if (money >= threshold) { // можем ли отдыхать?
-                money = (money - expenses)/3;
-                relax = relax+1;
+                money = (money - expenses) / 3;
+                relax = relax + 1;
             } else {
-                money = money + income-expenses;
+                money = money + income - expenses;
             }
         }
         return relax;
